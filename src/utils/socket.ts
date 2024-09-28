@@ -4,7 +4,7 @@ let socketInstance: any = null;
 
 export const initializeSocket = (token: any) => {
   if (!socketInstance) {
-    socketInstance = io("ws://localhost:6500", {
+    socketInstance = io("ws://chat-appliation-backend.onrender.com", {
       extraHeaders: {
         Authorization: token,
       },
