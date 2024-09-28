@@ -66,7 +66,7 @@ const Post: React.FC<PostProps> = ({ border = "", data, postIndex, status }) => 
   const profileData = useSelector((state: RootState) => state.auth);
 
   // const [commentCount, setCommentCount] = useState<number>(0);
-  const commentCount: number = useSelector((state: RootState) => status === 'feeds' ? state.feeds.feeds[postIndex].commentCount : state.posts.posts[postIndex].commentCount)
+  const commentCount: number = useSelector((state: RootState) => status === 'feeds' ? state.feeds.feeds[postIndex].commentCount : state.posts.posts[postIndex].commentCount) || 0
 
   const [comment, setComment] = useState<string>("");
 
