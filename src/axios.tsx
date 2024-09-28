@@ -6,7 +6,7 @@ import axiosClient, {
 } from "axios";
 import { requestForAccessToken } from "./apis/auth";
 
-const baseURL: string = "http://localhost:6500";
+const baseURL: string = "https://chat-appliation-backend.onrender.com";
 
 const axios: AxiosInstance = axiosClient.create({
   baseURL,
